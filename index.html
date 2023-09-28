@@ -6,11 +6,11 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
 </head>
 <body>
-  <div id="vis"/>
+  <div id="choropleth_map"/>
   <script>
     var specVis1 = "./choropleth_youtube_map.vg.json"; 
     
-    vegaEmbed('#symbol_map', specVis1).then(function(result) {
+    vegaEmbed('#choropleth_map', specVis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   </script>
