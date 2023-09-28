@@ -40,14 +40,14 @@
         </div>
       </div>
       <div class="pure-u-1-2">
-        <div id="vis1" class="vis-container"></div>
+        <div id="choropleth_map" class="vis-container"></div>
       </div>
     </div>
     <!-- end pure grid group -->
   <script type="text/javascript">
     var spec = "./choropleth_youtube_map.vg.json"
     
-    vegaEmbed("#vis1", spec, { "actions": false }, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#choropleth_map", spec, { "actions": false }, {mode: "vega-lite"}).then(console.log).catch(console.warn);
   </script>
 </body>
 </html>
