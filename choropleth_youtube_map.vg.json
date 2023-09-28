@@ -46,17 +46,16 @@
           }
         },
         {
-          "window": [{
-            "op": "sum",
-            "field": "video_views",
-            "as": "total_views"
-          }],
-        "frame": [null, null]
+          "window": [
+            {"op": "sum", "field": "video_views", "as": "total_views"}
+          ],
+          "frame": [null, null]
         },
         {
           "calculate": "datum.video_views/datum.total_views *100",
           "as": "viewsPercentage"
-        }, {"filter": "datum.viewsPercentage > 0"}
+        },
+        {"filter": "datum.viewsPercentage > 0"}
       ],
       "mark": {"type": "geoshape", "stroke": "white"},
       "encoding": {
@@ -64,12 +63,15 @@
           "field": "viewsPercentage",
           "type": "quantitative",
           "scale": {
-          "type": "threshold",
-          "domain": [1, 2, 3, 4],
-          "range": ["#ecb7b7", "#ee0f0f", "#bf2626", "#90030c"]
+            "type": "threshold",
+            "domain": [1, 2, 3, 4],
+            "range": ["#ecb7b7", "#ee0f0f", "#bf2626", "#90030c"]
           },
-          "title": ["Percentage of","the country video views","over global views"]
-
+          "title": [
+            "Percentage of",
+            "the country video views",
+            "over global views"
+          ]
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
@@ -77,7 +79,8 @@
           {
             "field": "viewsPercentage",
             "type": "quantitative",
-            "format": ".2f", "title": "% of the country video views over global views"
+            "format": ".2f",
+            "title": "% of the country video views over global views"
           }
         ]
       }
@@ -111,4 +114,4 @@
     }
   ],
   "config": {}
-};
+}
