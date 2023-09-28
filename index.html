@@ -57,7 +57,9 @@
     var spec = "./choropleth_youtube_map.vg.json"
     var spec2 = "./line-chart-responsive.json"
     
-    vegaEmbed("#choropleth_map", spec2, { "actions": false }, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#choropleth_map", spec, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
   </script>
 </body>
 </html>
