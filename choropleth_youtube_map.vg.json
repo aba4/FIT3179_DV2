@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Youtube Global Video Views in 2023",
+  "title": "YouTube Global Video Views in 2023",
   "width": 800,
   "height": 400,
   "data": {
@@ -39,7 +39,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/aba4/FIT3179_DV2/main/DV_2_map/data/cleaned_Youtube_data_1.csv"
+              "url": "https://raw.githubusercontent.com/aba4/FIT3179_DV2/main/cleaned_Youtube_data_1.csv"
             },
             "key": "Country",
             "fields": ["video_views", "Population"]
@@ -54,7 +54,7 @@
         "frame": [null, null]
         },
         {
-          "calculate": "(datum.video_views/datum.total_views *100)",
+          "calculate": "datum.video_views/datum.total_views *100",
           "as": "viewsPercentage"
         }, {"filter": "datum.viewsPercentage > 0"}
       ],
@@ -111,4 +111,4 @@
     }
   ],
   "config": {}
-}
+};
