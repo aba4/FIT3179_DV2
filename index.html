@@ -52,12 +52,33 @@
     </div>
     <!-- end pure grid group -->
 
+     <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="word_cloud" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="description description-right">
+          <h2>First and Second Columns Combined</h2>
+          <p>The first and second columns are combined. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien
+            faucibus et molestie ac feugiat sed. Egestas purus viverra accumsan in nisl.</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- end pure grid group -->
+
     </div> <!-- end page -->
   <script type="text/javascript">
     var spec = "./choropleth_youtube_map.vg.json"
-    var spec2 = "./line-chart-responsive.json"
+    var spec2 = "./word_cloud.vg.json"
     
     vegaEmbed("#choropleth_map", spec, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+     vegaEmbed("#word_cloud", spec, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
