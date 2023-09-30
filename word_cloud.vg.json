@@ -17,14 +17,6 @@
           "fields": ["category"],
           "ops": ["count"],
           "as": ["count"]
-        },
-        {
-          "type": "formula", "as": "angle",
-          "expr": "[-90, 0, 90][~~(random() * 3)]"
-        },
-        {
-          "type": "formula", "as": "weight",
-          "expr": "if(datum.category=='Entertainment', 600, 300)"
         }
       ]
     }
