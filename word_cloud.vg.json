@@ -1,8 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "description": "A word cloud visualization depicting categories from a CSV.",
-  "height": "200",
-  "width": "400",
   "data": [
     {
       "name": "table",
