@@ -25,7 +25,7 @@
       "name": "color",
       "type": "ordinal",
       "domain": {"data": "table", "field": "category"},
-      "range": ["#ecb7b7", "#ee0f0f", "#bf2626", "#90030c"]
+      "range": ["#ecb7b7", "#ee0f0f", "#90030c"]
     }
   ],
 
