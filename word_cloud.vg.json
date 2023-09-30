@@ -64,7 +64,7 @@
           "text": {"field": "text"},
           "font": "Helvetica Neue, Arial",
           "fontSize": {"field": "datum.count"},
-          "fontSizeRange": [12, 56],
+          "fontSizeRange": [10, 42],
           "padding": 2
         }
       ]
