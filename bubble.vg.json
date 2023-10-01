@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 600,
+  "title": "COVID-19 Cases per Country (13 Oct 2020)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/aba4/FIT3179_DV2/main/cleaned_Youtube_data_1.csv"
+  },
+  "params": [
+    {
+      "name": "Earnings_Above",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 30000000,
+        "step": 1000000,
+        "name": "Minimum Yearly Earnings: "
+      }
+    },
+    {
+      "name": "category_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Music", 
+          "Entertainment", 
+          "Education", 
+          "Shows", 
+          "People & Blogs",
+          "Sports", 
+          "Film & Animation", 
+          "News & Politics", 
+          "Gaming",
+          "Trailers", 
+          "Comedy", 
+          "Nonprofits & Activism",
+          "Science & Technology", 
+          "Movies", 
+          "Howto & Style",
+          "Pets & Animals", 
+          "Autos & Vehicles"
+        ],
+        "labels": [
+          "Show All",
+          "Music", 
+          "Entertainment", 
+          "Education", 
+          "Shows", 
+          "People & Blogs",
+          "Sports", 
+          "Film & Animation", 
+          "News & Politics", 
+          "Gaming",
+          "Trailers", 
+          "Comedy", 
+          "Nonprofits & Activism",
+          "Science & Technology", 
+          "Movies", 
+          "Howto & Style",
+          "Pets & Animals", 
+          "Autos & Vehicles"
+        ],
+        "name": "Category Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.subscribers > 0"},
+    {"filter": "datum.video_views > 0"},
+    {"filter": "datum.average_yearly_earnings > Earnings_Above"},
+    {
+      "filter": "category_selection == null || datum.category == category_selection"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "video_views",
+      "type": "quantitative",
+      "title": "Video Views"
+    },
+    "y": {
+      "field": "subscribers",
+      "type": "quantitative"
+    }
+  },
+  "layer": [
+    {
+      "mark": "circle",
+      "encoding": {
+        "size": {
+          "field": "average_yearly_earnings",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [1000000, 5000000, 10000000, 20000000, 30000000, 40000000],
+            "range": [10, 50, 150, 200, 300, 400, 500]
+          },
+          "legend": {"format": ".1s"}
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Entertainment",
+              "Music", 
+              "People & Blogs",
+              "Shows", 
+              "Education", 
+              "Comedy",
+              "Gaming",
+              "Film & Animation", 
+              "News & Politics", 
+              "Sports",               
+              "Trailers",               
+              "Nonprofits & Activism",
+              "Science & Technology", 
+              "Movies", 
+              "Howto & Style",
+              "Pets & Animals", 
+              "Autos & Vehicles"
+            ],
+            "range": ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0"]
+          }
+        },
+        "opacity": {"value": 0.6},
+        "tooltip": [
+          {"field": "Title", "type": "nominal"},
+          {"field": "category", "type": "nominal"},
+          {"field": "subscribers", "type": "quantitative", "format": ","},
+          {"field": "video_views", "type": "quantitative", "format": ","},
+          {"field": "lowest_yearly_earnings", "type": "quantitative", "format": ","},
+          {"field": "highest_yearly_earnings", "type": "quantitative", "format": ","},
+          {"field": "average_yearly_earnings", "type": "quantitative", "format": ","}
+        ]
+      }
+    }
+  ]
+}
