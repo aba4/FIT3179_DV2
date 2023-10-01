@@ -130,7 +130,7 @@
           {"field": "Title", "type": "nominal", "title": "Channel name"},
           {"field": "category", "type": "nominal", "title": "Category"},
           {"field": "subscribers", "type": "quantitative", "format": ",", "title": "Number of subscribers"},
-          {"field": "video_views", "type": "quantitative", "format": ",", "title": "Number of video views},
+          {"field": "video_views", "type": "quantitative", "format": ",", "title": "Number of video views"},
           {"field": "lowest_yearly_earnings", "type": "quantitative", "format": ",", "title": "Lowest yearly earnings"},
           {"field": "highest_yearly_earnings", "type": "quantitative", "format": ",", "title": "Highest yearly earnings"},
           {"field": "average_yearly_earnings", "type": "quantitative", "format": ",", "title": "Average yearly earnings"}
