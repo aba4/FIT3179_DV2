@@ -127,13 +127,13 @@
         },
         "opacity": {"value": 0.6},
         "tooltip": [
-          {"field": "Title", "type": "nominal"},
-          {"field": "category", "type": "nominal"},
-          {"field": "subscribers", "type": "quantitative", "format": ","},
-          {"field": "video_views", "type": "quantitative", "format": ","},
-          {"field": "lowest_yearly_earnings", "type": "quantitative", "format": ","},
-          {"field": "highest_yearly_earnings", "type": "quantitative", "format": ","},
-          {"field": "average_yearly_earnings", "type": "quantitative", "format": ","}
+          {"field": "Title", "type": "nominal", "title": "Channel name"},
+          {"field": "category", "type": "nominal", "title": "Category},
+          {"field": "subscribers", "type": "quantitative", "format": ",", "title": "Number of subscribers"},
+          {"field": "video_views", "type": "quantitative", "format": ",". "title": "Number of video views},
+          {"field": "lowest_yearly_earnings", "type": "quantitative", "format": ",", "title": "Lowest yearly earnings"},
+          {"field": "highest_yearly_earnings", "type": "quantitative", "format": ",", "title": "Highest yearly earnings"},
+          {"field": "average_yearly_earnings", "type": "quantitative", "format": ",", "title": "Average yearly earnings"}
         ]
       }
     }
