@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Youtube Channels' Video Views vs Subscribers Sized By Yearly Earnings",
+  "width": "600",
+  "hight": "400
   "data": {
     "url": "https://raw.githubusercontent.com/aba4/FIT3179_DV2/main/cleaned_Youtube_data_1.csv"
   },
