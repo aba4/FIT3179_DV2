@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Youtube Channels' Video Views vs Subscribers Sized By Yearly Earnings",
-  "width": "600",
-  "hight": "400
+  "title": "Top 10,000 Youtube Channels' Video Views vs Subscribers Sized By Yearly Earnings",
+  "width": 400,
+  "height": 200,
   "data": {
     "url": "https://raw.githubusercontent.com/aba4/FIT3179_DV2/main/cleaned_Youtube_data_1.csv"
   },
@@ -69,6 +69,7 @@
   "transform": [
     {"filter": "datum.subscribers > 0"},
     {"filter": "datum.video_views > 0"},
+    {"filter": "datum.rank <= 1000"},
     {"filter": "datum.average_yearly_earnings > Earnings_Above"},
     {
       "filter": "category_selection == null || datum.category == category_selection"
@@ -123,11 +124,20 @@
               "Autos & Vehicles"
             ],
             "range": ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0", "#c0c0c0"]
+          },
+          "legend": 
+          { "values": 
+              ["Entertainment",
+              "Music", 
+              "People & Blogs",
+              "Shows", 
+              "Education", 
+              "Other"] 
           }
         },
         "opacity": {"value": 0.6},
         "tooltip": [
-          {"field": "Title", "type": "nominal", "title": "Channel"},
+          {"field": "Title", "type": "nominal", "title": "Channel name"},
           {"field": "category", "type": "nominal", "title": "Category"},
           {"field": "subscribers", "type": "quantitative", "format": ",", "title": "Number of subscribers"},
           {"field": "video_views", "type": "quantitative", "format": ",", "title": "Number of video views"},
