@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Youtube Channels' Video Views vs Subscribers Sized By Yearly Earnings",
-  "width": 800,
-  "height": 600,
+  "width": 600,
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/aba4/FIT3179_DV2/main/cleaned_Youtube_data_1.csv"
   },
@@ -127,7 +127,7 @@
         },
         "opacity": {"value": 0.6},
         "tooltip": [
-          {"field": "Title", "type": "nominal", "title": "Channel name"},
+          {"field": "Title", "type": "nominal", "title": "Channel"},
           {"field": "category", "type": "nominal", "title": "Category"},
           {"field": "subscribers", "type": "quantitative", "format": ",", "title": "Number of subscribers"},
           {"field": "video_views", "type": "quantitative", "format": ",", "title": "Number of video views"},
