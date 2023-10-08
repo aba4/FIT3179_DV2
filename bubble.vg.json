@@ -97,7 +97,8 @@
           "field": "average_yearly_earnings",
           "type": "quantitative",
           "legend": {"format": ".1s", "clipHeight": 30},
-          "scale": {"rangeMax": 500}
+          "scale": {"rangeMax": 500},
+          "title": "Average yearly earnings"
         },
         "color": {"field": "category", "type": "nominal", "legend": null},
         "opacity": {"value": 0.6},
