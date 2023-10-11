@@ -67,9 +67,9 @@
     }
   ],
   "transform": [
-    {"filter": "datum.subscribers > 0"},
+    {"filter": "datum.subscribers_in_millions	 > 0"},
     {"filter": "datum.video_views > 0"},
-    {"filter": "datum.rank <= 1000"},
+    {"filter": "datum.rank_in_millions <= 1000"},
     {"filter": "datum.average_yearly_earnings > Earnings_Above"},
     {
       "filter": "category_selection == null || datum.category == category_selection"
