@@ -100,7 +100,7 @@
           "scale": {"rangeMax": 500},
           "title": "Average yearly earnings"
         },
-        "color": {"field": "category", "type": "nominal", "legend": null},
+        "color": {"field": "category", "type": "nominal", "legend": null, "schame":"dark2"},
         "opacity": {"value": 0.6},
         "tooltip": [
           {"field": "Title", "type": "nominal", "title": "Channel name"},
