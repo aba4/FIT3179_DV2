@@ -83,9 +83,9 @@
       "strokeWidth": 1,
       "encoding": {
         "x": {
-        "field": "video_views",
+        "field": "video_view_in_millions",
         "type": "quantitative",
-        "title": "Video Views",
+        "title": "Video Views in Millions",
         "axis": {"grid": false}
         },
         "y": {
@@ -94,7 +94,7 @@
           "axis": {"title": ""}
         },
         "size": {
-          "field": "average_yearly_earnings",
+          "field": "average_yearly_earnings_in_millions",
           "type": "quantitative",
           "legend": {"format": ".1s", "clipHeight": 30},
           "scale": {"rangeMax": 500},
@@ -105,11 +105,11 @@
         "tooltip": [
           {"field": "Title", "type": "nominal", "title": "Channel name"},
           {"field": "category", "type": "nominal", "title": "Category"},
-          {"field": "subscribers", "type": "quantitative", "format": ",", "title": "Number of subscribers"},
-          {"field": "video_views", "type": "quantitative", "format": ",", "title": "Number of video views"},
-          {"field": "lowest_yearly_earnings", "type": "quantitative", "format": ",", "title": "Lowest yearly earnings"},
-          {"field": "highest_yearly_earnings", "type": "quantitative", "format": ",", "title": "Highest yearly earnings"},
-          {"field": "average_yearly_earnings", "type": "quantitative", "format": ",", "title": "Average yearly earnings"}
+          {"field": "subscribers_in_millions", "type": "quantitative", "format": ",", "title": "Number of subscribers in millions"},
+          {"field": "video_view_in_millions", "type": "quantitative", "format": ",", "title": "Number of video views in millions"},
+          {"field": "lowest_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Lowest yearly earnings in millions"},
+          {"field": "highest_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Highest yearly earnings in millions"},
+          {"field": "average_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Average yearly earnings in millions"}
         ]
       }
     }
