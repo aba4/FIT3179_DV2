@@ -23,11 +23,11 @@ body {
     width: 100%;
 }
 
-.description h2,
-h1 {
+h2{
+    font-weight: 600;
     margin-top: 0px;
-    text-align: center;
 }
+
 
 .description-right {
     padding-left: 20px;
