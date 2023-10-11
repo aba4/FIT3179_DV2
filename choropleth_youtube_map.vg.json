@@ -41,13 +41,16 @@
               "url": "https://raw.githubusercontent.com/aba4/FIT3179_DV2/main/cleaned_Youtube_data_1.csv"
             },
             "key": "country_count",
-            "fields": ["percentage_country_channel_views", "num_country_channel_views"]
+            "fields": [
+              "percentage_country_channel_views",
+              "num_country_channel_views"
+            ]
           }
         },
         {
           "calculate": "datum.num_country_channel_views/1000000000",
           "as": "country_video_view_billions"
-        },
+        }
       ],
       "mark": {"type": "geoshape", "stroke": "white"},
       "encoding": {
@@ -65,9 +68,14 @@
             "over global views"
           ]
         },
+        "opacity": {"value": 0.7},
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-          {"field": "country_video_view_billions", "type": "quantitative", "title": "Video views in billions"},
+          {
+            "field": "country_video_view_billions",
+            "type": "quantitative",
+            "title": "Video views in billions"
+          },
           {
             "field": "percentage_country_channel_views",
             "type": "quantitative",
