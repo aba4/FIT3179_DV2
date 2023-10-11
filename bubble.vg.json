@@ -15,7 +15,7 @@
         "min": 0,
         "max": 30000000,
         "step": 1000000,
-        "name": "Minimum Yearly Earnings: "
+        "name": "Average Yearly Earnings: "
       }
     },
     {
