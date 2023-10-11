@@ -69,7 +69,7 @@
   "transform": [
     {"filter": "datum.subscribers > 0"},
     {"filter": "datum.video_views > 0"},
-    {"filter": "datum.rank_in_millions <= 1000"},
+    {"filter": "datum.rank <= 1000"},
     {"filter": "datum.average_yearly_earnings > Earnings_Above"},
     {
       "filter": "category_selection == null || datum.category == category_selection"
@@ -85,7 +85,7 @@
         "x": {
         "field": "video_view_in_millions",
         "type": "quantitative",
-        "title": "Video Views in Millions",
+        "title": "Video Views",
         "axis": {"grid": false}
         },
         "y": {
@@ -94,7 +94,7 @@
           "axis": {"title": ""}
         },
         "size": {
-          "field": "average_yearly_earnings_in_millions",
+          "field": "average_yearly_earnings",
           "type": "quantitative",
           "legend": {"format": ".1s", "clipHeight": 30},
           "scale": {"rangeMax": 500},
@@ -105,11 +105,11 @@
         "tooltip": [
           {"field": "Title", "type": "nominal", "title": "Channel name"},
           {"field": "category", "type": "nominal", "title": "Category"},
-          {"field": "subscribers_in_millions", "type": "quantitative", "format": ",", "title": "Number of subscribers in millions"},
-          {"field": "video_view_in_millions", "type": "quantitative", "format": ",", "title": "Number of video views in millions"},
-          {"field": "lowest_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Lowest yearly earnings in millions"},
-          {"field": "highest_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Highest yearly earnings in millions"},
-          {"field": "average_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Average yearly earnings in millions"}
+          {"field": "subscribers_in_millions", "type": "quantitative", "format": ",", "title": "Number of subscribers"},
+          {"field": "video_view_in_millions", "type": "quantitative", "format": ",", "title": "Number of video views"},
+          {"field": "lowest_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Lowest yearly earnings"},
+          {"field": "highest_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Highest yearly earnings"},
+          {"field": "average_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Average yearly earnings"}
         ]
       }
     }
