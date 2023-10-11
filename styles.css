@@ -45,15 +45,11 @@ body {
 }
 
 .left-vis-container {
-    width: 100%;
-    margin-right: 50px
-    padding-right: 50px
+    width: 90%;
 }
 
 .right-vis-container {
-    width: 100%;
-    margin-left: 50px
-    padding-left: 50px
+    width: 90%;
 }
 
 h2{
