@@ -8,7 +8,19 @@ h1 {
 }
 
 body {
-    background-color: lightgray;
+    background-color: rgb(234, 226, 226);
+}
+
+.block {
+    width: 950px;
+    background-color: rgb(255, 243, 243);
+    margin: auto;
+    padding: 50px;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd; 
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.05);
 }
 
 .page {
@@ -16,7 +28,11 @@ body {
     background-color: white;
     margin: auto;
     padding: 50px;
-    padding-top: 35px;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd; 
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.05);
 }
 
 .vis-container {
@@ -25,6 +41,13 @@ body {
 
 h2{
     font-weight: 600;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd; /* Adding a border below the title */
+}
+
+h3{
+    font-weight: 400;
     margin-top: 0px;
 }
 
@@ -47,4 +70,8 @@ h2{
 
 .center {
   justify-content: center;
+}
+
+.custom-grid {
+    padding: 20px;
 }
