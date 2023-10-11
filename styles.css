@@ -40,6 +40,16 @@ body {
     padding: 10px
 }
 
+.left-vis-container {
+    width: 100%;
+    padding-left: 20px
+}
+
+.right-vis-container {
+    width: 100%;
+    padding-right: 20px
+}
+
 h2{
     font-weight: 600;
     margin-top: 0px;
