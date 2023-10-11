@@ -7,6 +7,10 @@ h1 {
     text-align: center;
 }
 
+p {
+    margin: 10px
+}
+
 body {
     background-color: rgb(234, 226, 226);
 }
