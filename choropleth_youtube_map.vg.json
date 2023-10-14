@@ -1,8 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "YouTube Global Video Views in 2023",
-  "width": 600,
-  "height": 300,
+  "width": "container",
   "view": {
      "stroke": "transparent"
   },
