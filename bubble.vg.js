@@ -118,11 +118,11 @@
         "tooltip": [
           {"field": "Title", "type": "nominal", "title": "Channel name"},
           {"field": "category", "type": "nominal", "title": "Category"},
-          {"field": "subscribers_in_millions", "type": "quantitative", "format": ",", "title": "Number of subscribers"},
-          {"field": "video_view_in_millions", "type": "quantitative", "format": ",", "title": "Number of video views"},
-          {"field": "lowest_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Lowest yearly earnings"},
-          {"field": "highest_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Highest yearly earnings"},
-          {"field": "average_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Average yearly earnings"}
+          {"field": "subscribers_in_millions", "type": "quantitative", "format": ",", "title": "Subscribers in millions"},
+          {"field": "video_view_in_millions", "type": "quantitative", "format": ",", "title": "Video views in millions"},
+          {"field": "lowest_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Lowest yearly earnings in millions"},
+          {"field": "highest_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Highest yearly earnings in millions"},
+          {"field": "average_yearly_earnings_in_millions", "type": "quantitative", "format": ",", "title": "Average yearly earnings in millions"}
         ]
       }
     }
