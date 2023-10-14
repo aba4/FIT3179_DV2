@@ -90,4 +90,8 @@ h3{
 .vg-tooltip{
     max-width:300;
 }
+
+p.p_oce_column{
+    column-count: 2;
+}
     
