@@ -27,7 +27,7 @@
       "type": "nominal",
       "scale": {
         "domain": ["Entertainment", "Music", "People & Blogs", "Other"],
-        "range": ["#E63D3D","#F17164","#F4B9A2", "#C12727"]
+        "range": ["#64A6D1","#EF8E3B","#5FA64D", "#A8A8A8"]
       },
       "title": "Category"
     },
