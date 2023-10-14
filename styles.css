@@ -3,7 +3,7 @@ body *{
 }
 
 h1 {
-    font-weight: 900;
+    font-weight: 1000;
     text-align: center;
 }
 
@@ -51,14 +51,14 @@ body {
 }
 
 h2{
-    font-weight: 600;
+    font-weight: 800;
     margin-top: 0px;
     padding-bottom: 10px;
     border-bottom: 2px solid #ddd; /* Adding a border below the title */
 }
 
 h3{
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 0px;
 }
 
@@ -69,10 +69,6 @@ h3{
 
 .description-left {
     padding-right: 20px;
-}
-
-.pure-g {
-    margin-bottom: 40px;
 }
 
 .small-font {
@@ -93,5 +89,6 @@ h3{
 
 p.p_oce_column{
     column-count: 2;
+    line-height: 1.5;
 }
     
