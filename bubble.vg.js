@@ -94,6 +94,7 @@
         "x": {
         "field": "uploads",
         "type": "quantitative",
+        "scale":{"domain": [-5000, 320000]},
         "title": "Video views in millions"
         },
         "y": {
