@@ -45,7 +45,7 @@
           "url": "https://raw.githubusercontent.com/aba4/FIT3179_DV2/main/cleaned_Youtube_data_1.csv"
         },
         "key": "country_count",
-        "fields": ["percentage_country_channel_views", "num_country_channel_views"]
+        "fields": ["percentage_country_channel_views", "num_country_channel_views", "num_of_channels"]
       }
     },
     {
@@ -61,8 +61,12 @@
         "as": "line2"
     },
     {
-        "calculate": "datum.num_country_channel_views ? format(datum.percentage_country_channel_views, '.2f') + '%' : 'Data is not available in ' + datum.properties.NAME",
+        "calculate": "datum.num_country_channel_views ? format(datum.num_of_channels, '.0f') : 'Data is not available in ' + datum.properties.NAME",
         "as": "line3"
+    },
+    {
+        "calculate": "datum.num_country_channel_views ? format(datum.percentage_country_channel_views, '.2f') + '%' : 'Data is not available in ' + datum.properties.NAME",
+        "as": "line4"
     }
   ],
   "mark": {"type": "geoshape", "stroke": "white"},
@@ -86,7 +90,8 @@
     "tooltip": [
             {"field": "line1", "type": "nominal", "title":"Country"},
             {"field": "line2", "type": "quantitative", "title":"Video views in billions:"},
-            {"field": "line3", "title":"Country video views over global views"}
+            {"field": "line3", "title":"Number of channels"},
+            {"field": "line4", "title":"Country video views over global views"}
             ]
   }
     },
