@@ -82,7 +82,13 @@
       <!-- pure grid group -->
       <div class="pure-g">
         <div class="pure-u-1-1">
-          <div id="bubble_vis" class="vis-container"></div>
+          <div id="stacked_bar_chart" class="vis-container"></div>
+        </div>
+      </div>
+
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div id="buble_chart" class="vis-container"></div>
         </div>
       </div>
       <!-- end pure grid group -->
@@ -106,6 +112,8 @@
     var vis1 = "./choropleth_youtube_map.vg.json"
     var vis2 = "./word_cloud.vg.json"
     var vis3 = "./stacked_bar_chart_channel_count.vg.js"
+    var vis4 = "./bubble.vg.js"
+
     
     vegaEmbed("#choropleth_map", vis1, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -115,7 +123,11 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    vegaEmbed("#bubble_vis", vis3, { "actions": false }).then(function (result) {
+    vegaEmbed("#stacked_bar_chart", vis3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed("#buble_chart", vis4, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
