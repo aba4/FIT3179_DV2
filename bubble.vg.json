@@ -8,6 +8,11 @@
   },
   "params": [
     {
+    "name": "category_highlight",
+    "select": {"type": "point", "fields": ["category_figure_ground"]},
+    "bind": "legend"
+    },
+    {
       "name": "Earnings_Above",
       "value": 0,
       "bind": {
@@ -75,23 +80,26 @@
       "filter": "category_selection == null || datum.category == category_selection"
     }
   ],
+  "selection": {"category_highlight": {
+                "type": "multi",
+                "fields": ["category_figure_ground"],
+                "bind": "legend"
+                }
+},
+
   "layer": [
     {
       "mark": "circle",
-      "opacity": 0.8,
-      "stroke": "black",
-      "strokeWidth": 1,
       "encoding": {
         "x": {
-        "field": "video_view_in_millions",
+        "field": "uploads",
         "type": "quantitative",
-        "title": "Video Views",
-        "axis": {"grid": false}
+        "title": "Video views in millions"
         },
         "y": {
-          "field": "category",
-          "type": "nominal",
-          "axis": {"title": ""}
+          "field": "subscribers_in_millions",
+          "type": "quantitative",
+          "axis": {"title": "Number of subscribers in millions"}
         },
         "size": {
           "field": "average_yearly_earnings",
@@ -100,8 +108,12 @@
           "scale": {"rangeMax": 500},
           "title": "Average yearly earnings"
         },
-        "color": {"field": "category", "type": "nominal", "legend": null, "scheme":"dark2"},
-        "opacity": {"value": 0.6},
+        "color": {"field": "category_figure_ground", "type": "ordinal","scale":{"domain":["Entertainment", "Music", "People & Blogs", "Other"],"range": ["#FF6B6B","#5A8DAD","#F4C095", "#B2B2B2"]},"title":"Category"
+        },
+        "opacity": {
+          "condition": {"selection": "category_highlight", "value": 0.7},
+        "value": 0.1
+        },
         "tooltip": [
           {"field": "Title", "type": "nominal", "title": "Channel name"},
           {"field": "category", "type": "nominal", "title": "Category"},
