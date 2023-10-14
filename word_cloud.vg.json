@@ -24,8 +24,24 @@
     {
       "name": "color",
       "type": "ordinal",
-      "domain": {"data": "table", "field": "category"},
-      "scheme": "dark2"
+      "domain": ["Entertainment", 
+          "Music",
+          "People & Blogs",
+          "Education", 
+          "Shows", 
+          "Sports", 
+          "Film & Animation", 
+          "News & Politics", 
+          "Gaming",
+          "Trailers", 
+          "Comedy", 
+          "Nonprofits & Activism",
+          "Science & Technology", 
+          "Movies", 
+          "Howto & Style",
+          "Pets & Animals", 
+          "Autos & Vehicles"],
+      "range": ["#64A6D1", "#EF8E3B", "#5FA64D", "#A8A8A8", "#A8A8A8", "#A8A8A8", "#A8A8A8", "#A8A8A8", "#A8A8A8", "#A8A8A8", "#A8A8A8", "#A8A8A8", "#A8A8A8", "#A8A8A8", "#A8A8A8", "#A8A8A8", "#A8A8A8"]
     }
   ],
 
@@ -55,7 +71,8 @@
           "font": "Helvetica Neue, Arial",
           "fontSize": {"field": "datum.count"},
           "fontSizeRange": [10, 42],
-          "padding": 2
+          "padding": 2,
+          "seed": 50
         }
       ]
     }
