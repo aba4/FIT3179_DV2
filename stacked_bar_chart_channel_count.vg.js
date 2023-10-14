@@ -1,10 +1,14 @@
  {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Yearly Distribution of New Channels Created by Category (2005-2022)",
+  "width": 600,
+  "height": 300,
   "data": {"url": "https://raw.githubusercontent.com/aba4/FIT3179_DV2/main/cleaned_Youtube_data_1.csv"},
   "transform": [{
     "calculate": "if(datum.category_figure_ground === 'Other', 0, if(datum.category_figure_ground === 'Entertainment', 1, if(datum.category_figure_ground === 'Music', 2, if(datum.category_figure_ground === 'People & Blogs', 3, 4))))",
     "as": "categoryOrder"
-  }],
+    },
+    {"filter": {"timeUnit": "year", "field": "created_year", "range": ["2004", "2022"]}}],
   "mark": "bar",
   "encoding": {
     "x": {
@@ -13,6 +17,7 @@
       "type": "ordinal",
       "title": null
     },
+    
     "y": {
       "aggregate": "count",
       "type": "quantitative"
