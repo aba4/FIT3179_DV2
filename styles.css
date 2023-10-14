@@ -38,11 +38,11 @@ body {
 
 .vis-container {
     display: flex;
-    justify-content: center;  
-    align-items: center;     
-    height: 100vh;            
+    align-items: center;                
     width: 100%;
-    padding: 10px;
+    margin: auto;
+    box-sizing: content-box;
+    text-align: left;
 }
 
 .left-vis-container {
