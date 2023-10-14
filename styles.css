@@ -13,12 +13,10 @@ body {
 }
 
 .block {
-    width: 950px;
+    width: 900px;
     background-color: rgb(255, 243, 243);
     margin: auto;
-    padding: 20px;
-    padding-top: 20px;
-    margin-bottom: 15px;
+    padding: 2%;
     border-radius: 10px;
     border: 1px solid #ddd; 
     box-shadow: 0px 0px 5px rgba(0,0,0,0.05);
@@ -28,9 +26,8 @@ body {
     width: 850px;
     background-color: white;
     margin: auto;
-    padding: 50px;
-    padding-top: 20px;
-    margin-bottom: 15px;
+    padding: 2%;
+    margin-bottom: 2%;
     border-radius: 10px;
     border: 1px solid #ddd; 
     box-shadow: 0px 0px 5px rgba(0,0,0,0.05);
