@@ -118,10 +118,22 @@
     <div class="page">
       <div class="pure-g">
         <div class="pure-u-1-1">
-          <h2>United States & Indie where the top <span style="color: #FF0000">YouTube</span> channels</h2>
+          <h2>Deep Dive: Analyzing <span style="color: #cd6e89; font-weight: bold">MrBeast</span> and <span style="color: #5A8DAD; font-weight: bold">T-series</span>, the Titans of <span style="color: #FF0000">YouTube's</span> Ranking</h2>
           
         </div>
       </div>
+      <dic class="pure-g">
+        <div class="pure-u-1-1">
+          <h3>Video Upload Dynamics: A Comparative Analysis of <span style="color: #cd6e89; font-weight: bold">MrBeast</span> and <span style="color: #5A8DAD; font-weight: bold">T-series</span> (2015-2023)</h3>
+          <p class="two_column">
+            Within the vast universe of <span style="color: #FF0000">YouTube</span>, both <span style="color: #cd6e89; font-weight: bold">MrBeast</span> and <span style="color: #5A8DAD; font-weight: bold">T-series</span> have carved out significant territory, enthralling audiences worldwide with their distinctive content. 
+            This visualization delves into the intricate patterns of video uploads for these two influential channels from 2015 to 2023. At the forefront, the stacked area chart captures their combined video output, highlighting times of intense production and quieter intervals. 
+            Directly beneath, the interactive line graph not only offers a side-by-side comparison of their individual trajectories but also serves as an intuitive tool. By selecting a specific timeframe on the line graph, viewers can zoom into the corresponding period on the stacked chart, allowing for a more detailed exploration of upload trends. 
+            Through these visuals, we can discern the strategic approaches of each channel, providing insights into their growth, audience engagement, and adaptability over the years.
+          </p>
+          <div id="area_chart" class="vis-container"></div>
+        </div>
+      </dic>
       <!-- end pure grid group -->
     </div> <!-- end block -->
   </div> <!-- end block -->
@@ -134,6 +146,7 @@
     var vis2 = "./word_cloud.vg.json"
     var vis3 = "./stacked_bar_chart_channel_count.vg.js"
     var vis4 = "./bubble.vg.js"
+    var vis5 = "./area_chart.vg.js"
 
     
     vegaEmbed("#choropleth_map", vis1, { "actions": false }).then(function (result) {
@@ -149,6 +162,10 @@
     }).catch(console.error);
 
     vegaEmbed("#buble_chart", vis4, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed("#area_chart", vis5, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
