@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
   "data": {
     "url": "https://raw.githubusercontent.com/aba4/FIT3179_DV2/main/ch2_3.csv"
   },
@@ -8,6 +9,7 @@
       "width": "container",
       "height": 240,
       "mark": "area",
+      "title":"Video Upload Trends: MrBeast vs T-series (2015-2023)",
       "encoding": {
         "x": {
           "field": "publishDate",
@@ -29,7 +31,7 @@
     {
       "width": "container",
       "height": 60,
-      "mark": "area",
+      "mark": "line",
       "params": [
         {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
       ],
