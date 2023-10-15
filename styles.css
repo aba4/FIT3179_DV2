@@ -4,6 +4,7 @@ body *{
 
 h1 {
     font-weight: 1000;
+    font-size: 48px;
     text-align: center;
 }
 
@@ -88,11 +89,15 @@ h3{
     max-width:300;
 }
 
-.p{
+p.one_column{
     line-height: 1.5;
 }
-p.p_oce_column{
+p.two_column{
     column-count: 2;
+    line-height: 1.5;
+}
+p.title{
+    font-size: 24px;
     line-height: 1.5;
 }
     
