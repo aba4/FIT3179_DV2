@@ -97,8 +97,15 @@ p.two_column{
     line-height: 1.5;
 }
 p.title{
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 2;
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.one_col_right{
+    margin-right:3%;
 }
     
+.one_col_left{
+    margin-left: 3%;
+}
