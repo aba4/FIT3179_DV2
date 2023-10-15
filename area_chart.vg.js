@@ -6,7 +6,7 @@
   },
   "vconcat": [
     {
-      "width": "container",
+      "width": 500,
       "height": 240,
       "mark": "area",
       "title":"Video Upload Trends: MrBeast vs T-series (2015-2023)",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "width": "container",
+      "width": 500,
       "height": 60,
       "mark": "line",
       "params": [
