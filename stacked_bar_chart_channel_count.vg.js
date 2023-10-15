@@ -1,7 +1,7 @@
  {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Yearly Distribution of New Channels Created by Category (2005-2022)",
-  "width": 600,
+  "width": "container",
   "height": 300,
   "data": {"url": "https://raw.githubusercontent.com/aba4/FIT3179_DV2/main/cleaned_Youtube_data_1.csv"},
   "transform": [{
