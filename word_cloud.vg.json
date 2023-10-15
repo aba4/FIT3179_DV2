@@ -1,7 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "description": "A word cloud visualization depicting categories from a CSV.",
-  "width": "container",
   "data": [
     {
       "name": "table",
@@ -67,7 +66,7 @@
       "transform": [
         {
           "type": "wordcloud",
-          "size": [400, 200],
+          "size": [350, 200],
           "text": {"field": "text"},
           "font": "Helvetica Neue, Arial",
           "fontSize": {"field": "datum.count"},
